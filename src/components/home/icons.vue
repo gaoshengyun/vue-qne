@@ -90,6 +90,9 @@ export default {
     height: 0;
     padding-bottom: 50%;
   }
+  .icon{
+    margin-top: .1rem;
+  }
   .icons{
     height: 0;
     padding-bottom: 50%;
