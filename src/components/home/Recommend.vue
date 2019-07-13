@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li v-for="(item, index) in recommendList" :key="item.id" class="item border-bottom">
+      <li v-for="(item, index) in list" :key="item.id" class="item border-bottom">
         <img class="item-img" :src="item.imgUrl" alt="">
         <div class="item-info">
           <p class="item-title"> {{item.title}} </p>
@@ -16,30 +16,10 @@
 <script>
 export default {
   name:'home-recommend',
-  data() {
-    return {
-      recommendList:[
-        {
-          id:'0001',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1904/10/10ba58a425abc2ada3.img.jpg_200x200_5823f5d2.jpg',
-          title:'上海野生动物园',
-          desc:'海野生动物园为国家AAAAA级旅游景区。'
-        },
-        {
-          id:'0002',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1904/10/10ba58a425abc2ada3.img.jpg_200x200_5823f5d2.jpg',
-          title:'上海野生动物园',
-          desc:'海野生动物园为国家AAAAA级旅游景区。'
-        },
-        {
-          id:'0003',
-          imgUrl:'http://img1.qunarzz.com/sight/p0/1904/10/10ba58a425abc2ada3.img.jpg_200x200_5823f5d2.jpg',
-          title:'上海野生动物园',
-          desc:'海野生动物园为国家AAAAA级旅游景区。'
-        },
-      ]
-    }
+  props:{
+    list:Array
   },
+
 }
 </script>
 <style lang="less" scoped>
