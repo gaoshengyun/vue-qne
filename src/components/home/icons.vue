@@ -47,14 +47,14 @@ export default {
   @import "../../assets/styles/mixin.less";
   .swiper-container{
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 53%;
   }
   .icon{
     margin-top: .1rem;
   }
   .icons{
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 53%;
     overflow: hidden;
     .icon{
       width: 25%;
