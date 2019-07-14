@@ -1,17 +1,23 @@
 <template>
   <div>
     <detail-banner></detail-banner>
-  </div>
+    <detail-header></detail-header>
+    <div class="content"></div>
+    </div>
 </template>
 <script>
 import DetailBanner from '../components/detail/Banner.vue'
+import DetailHeader from '../components/detail/Header.vue'
 export default {
   name:'Detail',
   components:{
-    DetailBanner
+    DetailBanner,
+    DetailHeader
   }
 }
 </script>
 <style lang="less" scoped>
-
+  .content{
+    height: 50rem;
+  }
 </style>
