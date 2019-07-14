@@ -9,6 +9,16 @@ export default [
     path:'/city',
     name:'city',
     component: () => import(/* webpackChunkName: "city" */'../views/City.vue')
+  },
+  {
+    path:'/detail/:id',
+    name:'detail',
+    component: () => import(/* webpackChunkName */'../views/detail.vue')
+  },
+  {
+    path:'/*',
+    name:'error-404',
+    component: () => import('../views/error/404.vue')
   }
   
 ]
