@@ -13,7 +13,7 @@ export default [
   {
     path:'/detail/:id',
     name:'detail',
-    component: () => import(/* webpackChunkName */'../views/detail.vue')
+    component: () => import(/* webpackChunkName :"detail"*/'../views/detail.vue')
   },
   {
     path:'/*',
